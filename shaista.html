@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration form</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link href="shaista.css" rel="stylesheet">
+<src="application.js"></src>
+</head>
+<body>
+    <h1></h1>
+    <nav class="navbar navbar-expand-lg bg light">
+        <div class="container-fluid">
+            <Img src="data:image/jpeg;base64,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"width="40 px">
+          <a class="navbar-brand" href="#">Habib IT Solutions</a>
+         
+        
+      </nav>
+      <h1 style="text-align:center">Registration form</h1>
+      <div class="container">
+        <div class="name">
+            <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form label">Last name</label>
+                      <input type="text" class="form-control" id="lastname">   
+                    </div>
+                  </form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Date of birth</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form label">Mobile number</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">   
+                  </div>
+                  <label for="exampleInputPassword1" class="form label">Gender</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Male</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2"></label>Female
+                    </label>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col">
+                          <label for="exampleInputEmail1" class="form-label">School</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Marks</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                  <label for="exampleInputEmail1" class="form-label">College</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="col">
+                                    <label for="exampleInputEmail1" class="form-label">Marks</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                          <label for="exampleInputEmail1" class="form-label">Degree</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputEmail1" class="form-label">Marks</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Aadhar</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload  Pancard</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload 10 th marks</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Inter marks</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Semister 1 marks</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Semister 2 marks</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Semister 3 marks</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Resume</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <button type="button" onclick="resume()" class="btn btn-primary">Submit</button>
+    </div>
+    </div>
+      </div>
+      <hr>
+      <div class="container" id="resume">
+        <h1>Resume</h1>
+        <p id="name">Name : </p> 
+    
+        <p id="number">Mobile number : </p>
+        <p id="mail">E-mail id : 
+        </p>
+   
+          <div class="Qualifications">
+       <u><h2 style="background-color:aqua">Educational Qualifications</h2></u>
+        <table border="1px" width="75%" cellspacing="3px" cellpadding="6px">
+             <tr style="background-color:slategrey">
+                <th>School/College</th>
+                <th>Course</th>
+                <th>Board/University</th>
+                <th>Year</th>
+                <th>Percentage</th>
+             </tr>
+             <tr style="background-color:silver">
+                <td>St.Joseph's Degree College</td>
+                <td>BZC</td>
+                <td>Rayalaseema University</td>
+                <td>2020-2023</td>
+                <td>86%</td>
+             </tr>
+             <tr style="background-color:silver">
+                 <td>Narayana Junior college</td>
+                 <td>BiPC</td>
+                 <TD>APBIE</TD>
+                 <td>2020</td>
+                 <td>90%</td>
+             </tr>
+             <tr style="background-color:silver">
+                 <td>Ravindra E.M School for girls</td>
+                 <td>class X</td>
+                 <td>SSC</td>
+                 <td>2018</td>
+                 <td>90.8%</td>
+             </tr>
+             </table>
+               </div>
+            <hr>
+         <div class="skills">
+            <u><h2 style="background-color:aqua">Skills</h2></u>  
+         <ul type="square">
+           <li>Interpersonal skills</li> 
+           <li>Good communication skills</li>
+           <li>Hard Working</li>
+           <li>Basic Computer Skills</li>
+           <li>Negotiation Skills</li>
+           <li>Time Management Skills</li>
+
+         </ul>
+    </div>
+        <hr>
+        <div id="activities">
+        <u><h2 style="background-color:antiquewhite">Activities</h2></u>
+        <ol type="A">
+            <li>Active member of ED Cell</li>
+            <li>AWS Cloud foundations internship</li>
+            <li> Medical Scribe internship</li>
+            <li>Socio-Economic Survey Project</li>
+        </ol>
+        </div>
+        <hr>
+        <div id="pd">
+     <h2 style="background-color:rgb(29, 175, 175)" ><u>Personal details</u></h2>
+            <p>Father's name : D.Habeebulla</p> 
+            <p>DOB : 19/03/2002</p>
+            <p>Languages known : English, Hindi, Telugu</p>
+        </div>
+        <hr>
+         <div class="declaration">
+              <h2 style="background-color:bisque">Declaration:</h2>
+        <p>
+             I hereby declare that all the details furnished above are true to the best of my knowledge and belief.
+        </p>
+          </div>
+</body>
+</html>
